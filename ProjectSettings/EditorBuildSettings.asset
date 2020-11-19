@@ -4,5 +4,41 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/InGame.unity
+    guid: 8cd14249617a95648a98c8cc65dd328a
+  - enabled: 1
+    path: Assets/Scenes/OptionsMenu.unity
+    guid: bcc2541f7122289428ecbb696bd25970
+  - enabled: 1
+    path: Assets/Scenes/Chapters.unity
+    guid: 173f13edaffcb15418dbccea02e657cf
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_1.unity
+    guid: 8f969908dde6fb648b33d0929263ad58
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_2.unity
+    guid: fa062341894b8c84ab758323330e9557
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_3.unity
+    guid: 52c4256f03289d44485bd7ea2a8f0b10
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_4.unity
+    guid: 36864b40d5711b34ab935e0325545558
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_5.unity
+    guid: 12c598c6a40029747bee76690e68b9a7
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_6.unity
+    guid: 873dfa1e922ef3a4890857c6c31dcba5
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_7.unity
+    guid: 3afafc28f01a8d342bc67e3c46383097
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_8.unity
+    guid: d46e1b0d6f05c824c8d4cf6c6f14ad8f
   m_configObjects: {}
