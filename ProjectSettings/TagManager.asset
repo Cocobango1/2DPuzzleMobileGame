@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Laser
+    uniqueID: 1199453621
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
