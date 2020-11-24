@@ -1608,6 +1608,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1490314448465145505, guid: d19f6548994139040a7e9bae13dec12f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2522767712585933502, guid: d19f6548994139040a7e9bae13dec12f,
         type: 3}
       propertyPath: m_Name
@@ -2704,6 +2709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837927556607298029, guid: 52550db8310d12b47b00196d64987807,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52550db8310d12b47b00196d64987807, type: 3}
@@ -4697,6 +4707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.4292453
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522886969685544430, guid: 9496962c02032f042a731ee0620e1bc7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8296433269193327011, guid: 9496962c02032f042a731ee0620e1bc7,
         type: 3}
