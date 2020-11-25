@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 public class Move : MonoBehaviour
 {
+    
+
     public UnityEvent moveEvent;
 
     public Vector2Int targetPosition;
@@ -15,8 +17,12 @@ public class Move : MonoBehaviour
     [SerializeField] private int moveCounter = 23;
     private bool playerBlocked = false;
     Vector3 move;
-    //public static int scoreValue = 23;
+    public Animator animator;
+    Vector3 characterScale;
     
+
+    //public static int scoreValue = 23;
+
 
     private void Awake()
     {
@@ -62,7 +68,9 @@ public class Move : MonoBehaviour
             GetPositions();
             CheckForObject();
             PlayerMoved();
-        }if (Input.GetKeyDown(KeyCode.S))
+           
+        }
+        if (Input.GetKeyDown(KeyCode.S))
         {
             direction = Vector2Int.down;
             GetPositions();
@@ -75,16 +83,22 @@ public class Move : MonoBehaviour
             GetPositions();
             CheckForObject();
             PlayerMoved();
+            transform.localEulerAngles = new Vector3(0, 0, 0);
         }
+        
         if (Input.GetKeyDown(KeyCode.D))
         {
             direction = Vector2Int.right;
             GetPositions();
             CheckForObject();
             PlayerMoved();
+            transform.localEulerAngles = new Vector3(0, 180, 0);
         }
 
-        //else if
+        else
+            {
+            animator.SetBool("isIdle", true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -97,7 +111,10 @@ public class Move : MonoBehaviour
 
     public void PlayerMoved()
     {
-        //animator.SetTrigger("WhateveritsCalled");
+        if (!playerBlocked)
+        {
+            animator.SetTrigger("isWalking");
+        }
         moveCounter--;
         CheckIfGameOver();
         moveEvent?.Invoke();
@@ -112,5 +129,12 @@ public class Move : MonoBehaviour
     private void CheckForObject()
     {
         playerBlocked = GetComponent<FindObject>().CheckArea(targetPosition, direction);
+
+        if (playerBlocked)
+        {
+
+            animator.SetTrigger("isPushing");
+           
+        }
     }
 }
