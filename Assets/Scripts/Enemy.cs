@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IBlockable
 {
-    public GameObject ObjectDestroyed;
-
-    // Start is called before the first frame update
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public void DefineTargetPosition(Vector2Int direction)
     {
-        if (other.gameObject.tag == "Player")
-        {
-            StartCoroutine(SelfDestruct());
-
-        }
+        EnemyDeath();
     }
+
+    private void EnemyDeath()
+    {
+        StartCoroutine(SelfDestruct());
+    }
+
     IEnumerator SelfDestruct()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         Destroy(gameObject);
     }
 }
