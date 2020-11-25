@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4484268453731459466}
   - component: {fileID: 7327184385249889341}
   - component: {fileID: 3777499088796220075}
+  - component: {fileID: 6816474000474615578}
+  - component: {fileID: 2020897447}
   m_Layer: 0
   m_Name: Mirror_BackLeft
   m_TagString: Untagged
@@ -122,3 +124,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &6816474000474615578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626946139618719947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4971bc68552ba7943abcb7d18529751c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &2020897447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626946139618719947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3502a95de7fdd49a0df58c70378f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

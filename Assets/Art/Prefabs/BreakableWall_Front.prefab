@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8656257379692026164}
   - component: {fileID: 299124873100040131}
   - component: {fileID: 5138801424097843488}
+  - component: {fileID: 8892268142077016034}
   m_Layer: 0
   m_Name: BreakableWall_Front
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 75e1a63105bbd944580f0fbd7b646fe2, type: 3}
   m_Color: {r: 1, g: 0.504717, b: 0.504717, a: 1}
   m_FlipX: 0
@@ -108,3 +109,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.99, y: 2.36}
   m_EdgeRadius: 0
+--- !u!114 &8892268142077016034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121004675260146058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d299091965acd40afdead2ffc39e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

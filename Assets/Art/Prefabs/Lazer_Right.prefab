@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 603024200517421454}
   - component: {fileID: 7139846822066818824}
   - component: {fileID: 3130955230870899220}
+  - component: {fileID: 419407493}
+  - component: {fileID: 419407494}
   m_Layer: 0
   m_Name: Lazer_Right
   m_TagString: Untagged
@@ -108,3 +110,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9553125, y: 2.36}
   m_EdgeRadius: 0
+--- !u!114 &419407493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6908606219767106773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d299091965acd40afdead2ffc39e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &419407494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6908606219767106773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3502a95de7fdd49a0df58c70378f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
