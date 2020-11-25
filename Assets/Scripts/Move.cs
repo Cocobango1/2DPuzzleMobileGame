@@ -12,14 +12,10 @@ public class Move : MonoBehaviour
     public Vector2Int direction;
     public float speed;
     [SerializeField] private int moveCounter = 23;
+    private bool playerBlocked = false;
     Vector3 move;
     //public static int scoreValue = 23;
     
-
-   // private void Start()
-   // {
-        
-//    }
 
     private void Awake()
     {
@@ -34,7 +30,7 @@ public class Move : MonoBehaviour
         move.y = (int)Input.GetAxisRaw("Vertical");
         var moving = (Vector2)transform.position != targetPosition;
 
-        if (moving)
+        if (moving && !playerBlocked)
         {
             MoveTowardsTargetPosition();
         }
@@ -42,8 +38,6 @@ public class Move : MonoBehaviour
         {
             SetNewTargetPositionFromInput();
         }
-
-        
     } 
 
     private void MoveTowardsTargetPosition()
@@ -108,6 +102,6 @@ public class Move : MonoBehaviour
 
     private void CheckForObject()
     {
-        GetComponent<FindObject>().CheckArea(targetPosition, direction);
+        playerBlocked = GetComponent<FindObject>().CheckArea(targetPosition, direction);
     }
 }
