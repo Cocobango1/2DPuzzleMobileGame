@@ -9,9 +9,9 @@ public class FindObject : MonoBehaviour
     {
         Collider2D moveablObject = Physics2D.OverlapCircle(targetPosition, 0.1f, layerMask);
 
-        if (moveablObject != null && moveablObject.GetComponent<ObjectMovement>() != null)
+        if (moveablObject != null && moveablObject.GetComponent<IBlockable>() != null && moveablObject.gameObject != gameObject)
         {
-            moveablObject.GetComponent<ObjectMovement>().DefineTargetPosition(direction);
+            moveablObject.GetComponent<IBlockable>().DefineTargetPosition(direction);
             return true;
         }
         else

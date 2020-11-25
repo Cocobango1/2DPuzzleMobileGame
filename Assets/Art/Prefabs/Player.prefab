@@ -300,9 +300,10 @@ GameObject:
   - component: {fileID: 3463270140727148123}
   - component: {fileID: 3183164395002823200}
   - component: {fileID: 3266528728988561297}
-  m_Layer: 0
+  - component: {fileID: 313818906}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -464,6 +465,18 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1
+--- !u!114 &313818906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915931754085170027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3502a95de7fdd49a0df58c70378f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3961760047987894249
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 139430129560883381}
   - component: {fileID: 3389990960072843631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CharacterSprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}

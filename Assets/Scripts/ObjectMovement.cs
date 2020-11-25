@@ -2,20 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectMovement : MonoBehaviour
+public class ObjectMovement : MonoBehaviour, IBlockable
 {
     public float speed = 4;
     Vector2Int targetPosition;
+    private bool objectBlocked = false;
 
     private void Awake()
     {
         targetPosition = new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
         transform.position = (Vector2)targetPosition;
     }
+
     public void DefineTargetPosition(Vector2Int direction)
     {
         Vector2Int position = new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
-        targetPosition = position + direction;
+        objectBlocked = GetComponent<FindObject>().CheckArea(position + direction, Vector2Int.zero);
+        if (!objectBlocked)
+            targetPosition = position + direction;
     }
 
     private void MoveTowardsTargetPosition()
@@ -30,6 +34,10 @@ public class ObjectMovement : MonoBehaviour
         if (moving)
         {
             MoveTowardsTargetPosition();
+        }
+        else
+        {
+            GetComponent<LayerOrder>().SetlayerOrder();
         }
     }
 }

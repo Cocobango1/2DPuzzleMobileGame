@@ -37,6 +37,7 @@ public class Move : MonoBehaviour
         }
         else
         {
+            GetComponent<LayerOrder>().SetlayerOrder();
             SetNewTargetPositionFromInput();
         }
     } 
