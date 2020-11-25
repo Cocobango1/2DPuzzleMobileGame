@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< Updated upstream
   tags: []
+=======
+  tags:
+  - Trap
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -13,7 +18,11 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< Updated upstream
   - 
+=======
+  - Player
+>>>>>>> Stashed changes
   - 
   - 
   - 
@@ -38,9 +47,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+<<<<<<< Updated upstream
   - name: Laser
     uniqueID: 1199453621
     locked: 0
+=======
+>>>>>>> Stashed changes
   - name: Default
     uniqueID: 0
     locked: 0
