@@ -9,7 +9,8 @@ public class Move : MonoBehaviour
     public UnityEvent moveEvent;
 
     public Vector2Int targetPosition;
-    public Vector2Int direction;
+    Vector2Int currentPosition;
+    public Vector2Int direction = Vector2Int.zero;
     public float speed;
     [SerializeField] private int moveCounter = 23;
     private bool playerBlocked = false;
@@ -19,7 +20,7 @@ public class Move : MonoBehaviour
 
     private void Awake()
     {
-        targetPosition = new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
+        GetPositions();
         transform.position = (Vector2)targetPosition;
     }
 
@@ -43,6 +44,13 @@ public class Move : MonoBehaviour
     private void MoveTowardsTargetPosition()
     {
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        targetPosition = currentPosition + direction;
+    }
+
+    private void GetPositions()
+    {
+        currentPosition = new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
+        targetPosition = currentPosition + direction;
     }
 
     private void SetNewTargetPositionFromInput()
@@ -50,27 +58,27 @@ public class Move : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             direction = Vector2Int.up;
-            targetPosition += direction;
+            GetPositions();
             CheckForObject();
             PlayerMoved();
         }if (Input.GetKeyDown(KeyCode.S))
         {
             direction = Vector2Int.down;
-            targetPosition += direction;
+            GetPositions();
             CheckForObject();
             PlayerMoved();
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
             direction = Vector2Int.left;
-            targetPosition += direction;
+            GetPositions();
             CheckForObject();
             PlayerMoved();
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
             direction = Vector2Int.right;
-            targetPosition += direction;
+            GetPositions();
             CheckForObject();
             PlayerMoved();
         }

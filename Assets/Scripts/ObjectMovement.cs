@@ -15,7 +15,7 @@ public class ObjectMovement : MonoBehaviour
     public void DefineTargetPosition(Vector2Int direction)
     {
         Vector2Int position = new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
-       targetPosition = position + direction;
+        targetPosition = position + direction;
     }
 
     private void MoveTowardsTargetPosition()

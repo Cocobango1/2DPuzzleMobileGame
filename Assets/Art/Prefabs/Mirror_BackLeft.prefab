@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4382492298132376405}
   - component: {fileID: 4484268453731459466}
   - component: {fileID: 7327184385249889341}
+  - component: {fileID: 3777499088796220075}
   m_Layer: 0
   m_Name: Mirror_BackLeft
   m_TagString: Untagged
@@ -108,3 +109,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.86, y: 2.32}
   m_EdgeRadius: 0
+--- !u!114 &3777499088796220075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626946139618719947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a867cdb6d91d0b4599e717214b78716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4

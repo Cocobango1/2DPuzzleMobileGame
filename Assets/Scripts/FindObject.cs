@@ -17,5 +17,4 @@ public class FindObject : MonoBehaviour
         else
             return false;
     }
-
 }
