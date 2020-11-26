@@ -9,6 +9,11 @@ public interface IBlockable
 
 public interface IReflectable
 {
-    void ReflectLaser(Vector3 hitNormal); 
+    void ReflectLaser(Vector2 hitNormal); 
     void StopLaser();
+}
+
+public interface ILazerDirection
+{
+    Vector2 LazerDirection(Vector2 inputDirection);
 }

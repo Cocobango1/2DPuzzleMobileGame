@@ -3,10 +3,9 @@
 public class laser : MonoBehaviour, IReflectable
 {
     private LineRenderer lineRenderer;
-    [SerializeField] private Vector3 direction;
+    [SerializeField] private Vector2 direction;
     [SerializeField] private bool startBeam; 
-    [SerializeField] private IReflectable reflect ;
-
+    [SerializeField] private IReflectable reflect;
 
     void Start()
     {
@@ -32,8 +31,8 @@ public class laser : MonoBehaviour, IReflectable
 
         if (hit.transform.GetComponent<IReflectable>() != null)
         {
-          reflect=  hit.transform.GetComponent<IReflectable>();
-          reflect.ReflectLaser(hit.normal);
+            reflect = hit.transform.GetComponent<IReflectable>();
+            reflect.ReflectLaser(hit.normal);
         }
         else if (reflect != null)
         {
@@ -41,8 +40,9 @@ public class laser : MonoBehaviour, IReflectable
         }
     }
 
-    public void ReflectLaser(Vector3 hitNormal)
+    public void ReflectLaser(Vector2 hitNormal)
     {
+        direction = GetComponent<ILazerDirection>().LazerDirection(hitNormal);
         startBeam = true;
     }
     public void StopLaser()
