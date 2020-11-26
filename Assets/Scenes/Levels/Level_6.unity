@@ -4903,6 +4903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8430191108060208472, guid: f4176d702fdda414fa8ebfb06ecfd2d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4176d702fdda414fa8ebfb06ecfd2d4, type: 3}
 --- !u!1 &1680101147
@@ -5594,6 +5599,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8430191108060208472, guid: f4176d702fdda414fa8ebfb06ecfd2d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4176d702fdda414fa8ebfb06ecfd2d4, type: 3}
 --- !u!1001 &2056591276
@@ -5697,6 +5707,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260206441286024483, guid: 2d23672c79314b44a90fbb065c887db7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260206441286024483, guid: 2d23672c79314b44a90fbb065c887db7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.19
       objectReference: {fileID: 0}
     - target: {fileID: 4260206441286024483, guid: 2d23672c79314b44a90fbb065c887db7,
         type: 3}
