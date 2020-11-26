@@ -286,3 +286,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
   startBeam: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1

@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-public class laser : MonoBehaviour, IReflectable
+public class laser : MonoBehaviour , IReflectable
 {
     private LineRenderer lineRenderer;
     [SerializeField] private Vector2 direction;
-    [SerializeField] private bool startBeam; 
     [SerializeField] private IReflectable reflect;
+    public bool startBeam;
 
     void Start()
     {
@@ -19,6 +19,8 @@ public class laser : MonoBehaviour, IReflectable
     {
         if (startBeam)
             DrawRay();
+        else
+            reflect = null;
     }
 
     public void DrawRay()
@@ -34,9 +36,12 @@ public class laser : MonoBehaviour, IReflectable
             reflect = hit.transform.GetComponent<IReflectable>();
             reflect.ReflectLaser(hit.normal);
         }
-        else if (reflect != null)
+        else
         {
-            reflect.StopLaser();
+            if (reflect != null)
+            {
+                StopLaser();
+            }
         }
     }
 
@@ -45,6 +50,7 @@ public class laser : MonoBehaviour, IReflectable
         direction = GetComponent<ILazerDirection>().LazerDirection(hitNormal);
         startBeam = true;
     }
+
     public void StopLaser()
     {
         startBeam = false;

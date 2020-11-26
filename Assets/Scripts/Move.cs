@@ -30,7 +30,7 @@ public class Move : MonoBehaviour
         transform.position = (Vector2)targetPosition;
     }
 
-    // Update is called once per frame
+
     private void Update()
     {
         move.x = (int)Input.GetAxisRaw("Horizontal");

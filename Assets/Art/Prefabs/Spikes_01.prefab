@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4260206441286024483}
   - component: {fileID: 1387444611311566615}
   - component: {fileID: 670719966805576869}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spikes_01
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.06695163, y: 0.5210298}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -106,5 +106,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.27, y: 2.82}
+  m_Size: {x: 2.304303, y: 1.008314}
   m_EdgeRadius: 0
