@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6735491800495421140}
   - component: {fileID: 4043766640844680467}
   - component: {fileID: 5518287529934217872}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Spikes_02
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

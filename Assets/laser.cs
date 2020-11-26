@@ -40,7 +40,7 @@ public class laser : MonoBehaviour , IReflectable
         {
             if (reflect != null)
             {
-                StopLaser();
+                reflect.StopLaser();
             }
         }
     }
