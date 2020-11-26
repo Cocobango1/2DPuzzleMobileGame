@@ -122,7 +122,7 @@ public class Move : MonoBehaviour
 
     private void CheckIfGameOver()
     {
-        if (moveCounter <= 0)
+        if (moveCounter < 0)
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
