@@ -6554,6 +6554,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8430191108060208472, guid: f4176d702fdda414fa8ebfb06ecfd2d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4176d702fdda414fa8ebfb06ecfd2d4, type: 3}
 --- !u!1001 &2001969173304034940
