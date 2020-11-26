@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour, IBlockable
     {
         EnemyDeath();
     }
+    
 
     private void EnemyDeath()
     {
