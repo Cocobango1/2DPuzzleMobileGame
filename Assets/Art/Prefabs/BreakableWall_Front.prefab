@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 299124873100040131}
   - component: {fileID: 5138801424097843488}
   - component: {fileID: 8892268142077016034}
+  - component: {fileID: 7288737683048164200}
   m_Layer: 0
   m_Name: BreakableWall_Front
   m_TagString: Untagged
@@ -119,5 +120,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d299091965acd40afdead2ffc39e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7288737683048164200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121004675260146058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3502a95de7fdd49a0df58c70378f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
