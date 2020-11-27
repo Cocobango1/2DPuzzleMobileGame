@@ -18,6 +18,8 @@ public class Move : MonoBehaviour
     private bool playerBlocked = false;
     Vector3 move;
     public Animator animator;
+    public Animator animatorFX;
+    public Animator animatorHit;
     Vector3 characterScale;
     
 
@@ -98,6 +100,8 @@ public class Move : MonoBehaviour
         else
             {
             animator.SetBool("isIdle", true);
+            animatorFX.SetBool("isIdle", true);
+            animatorHit.SetBool("isIdle", true);
         }
     }
 
@@ -114,6 +118,7 @@ public class Move : MonoBehaviour
         if (!playerBlocked)
         {
             animator.SetTrigger("isWalking");
+            animatorFX.SetTrigger("isWalking");
         }
         moveCounter--;
         CheckIfGameOver();
@@ -134,6 +139,7 @@ public class Move : MonoBehaviour
         {
 
             animator.SetTrigger("isPushing");
+            animatorHit.SetTrigger("isPushing");
            
         }
     }
