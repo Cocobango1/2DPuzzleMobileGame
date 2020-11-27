@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using UnityEngine.Events;
 public class Move : MonoBehaviour
 {
-    
-
     public UnityEvent moveEvent;
 
     public Vector2Int targetPosition;
@@ -20,18 +17,12 @@ public class Move : MonoBehaviour
     public Animator animator;
     public Animator animatorFX;
     public Animator animatorHit;
-    Vector3 characterScale;
-    
-
-    //public static int scoreValue = 23;
-
 
     private void Awake()
     {
         GetPositions();
         transform.position = (Vector2)targetPosition;
     }
-
 
     private void Update()
     {
@@ -137,10 +128,8 @@ public class Move : MonoBehaviour
 
         if (playerBlocked)
         {
-
             animator.SetTrigger("isPushing");
             animatorHit.SetTrigger("isPushing");
-           
         }
     }
 }
