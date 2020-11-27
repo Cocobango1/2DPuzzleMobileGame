@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class SceneChange : MonoBehaviour
 {
-
-    
     public string scene_name;
     public int num;
 
