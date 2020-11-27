@@ -7,9 +7,10 @@ public interface IBlockable
    void DefineTargetPosition(Vector2Int direction);
 }
 
+
 public interface IReflectable
 {
-    void ReflectLaser(Vector2 hitNormal); 
+    void ReflectLaser(Vector2 hitNormal);
     void StopLaser();
 }
 

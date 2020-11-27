@@ -18,6 +18,8 @@ public class Move : MonoBehaviour
     private bool playerBlocked = false;
     Vector3 move;
     public Animator animator;
+    public Animator animatorFX;
+    public Animator animatorHit;
     Vector3 characterScale;
     
 
@@ -30,7 +32,7 @@ public class Move : MonoBehaviour
         transform.position = (Vector2)targetPosition;
     }
 
-    // Update is called once per frame
+
     private void Update()
     {
         move.x = (int)Input.GetAxisRaw("Horizontal");
@@ -98,6 +100,8 @@ public class Move : MonoBehaviour
         else
             {
             animator.SetBool("isIdle", true);
+            animatorFX.SetBool("isIdle", true);
+            animatorHit.SetBool("isIdle", true);
         }
     }
 
@@ -114,6 +118,7 @@ public class Move : MonoBehaviour
         if (!playerBlocked)
         {
             animator.SetTrigger("isWalking");
+            animatorFX.SetTrigger("isWalking");
         }
         moveCounter--;
         CheckIfGameOver();
@@ -122,7 +127,7 @@ public class Move : MonoBehaviour
 
     private void CheckIfGameOver()
     {
-        if (moveCounter <= 0)
+        if (moveCounter < 0)
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -134,6 +139,7 @@ public class Move : MonoBehaviour
         {
 
             animator.SetTrigger("isPushing");
+            animatorHit.SetTrigger("isPushing");
            
         }
     }

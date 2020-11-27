@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5138801424097843488}
   - component: {fileID: 8892268142077016034}
   - component: {fileID: 7288737683048164200}
+  - component: {fileID: 240867922}
   m_Layer: 0
   m_Name: BreakableWall_Front
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 9121004675260146058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.4, y: 0.68, z: 0}
-  m_LocalScale: {x: 0.5072704, y: 0.5072704, z: 0.5072704}
+  m_LocalScale: {x: 0.3408857, y: 0.3408857, z: 0.3408857}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 75e1a63105bbd944580f0fbd7b646fe2, type: 3}
   m_Color: {r: 1, g: 0.504717, b: 0.504717, a: 1}
   m_FlipX: 0
@@ -134,3 +135,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3502a95de7fdd49a0df58c70378f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &240867922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121004675260146058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbea171acc5c354596ec096c580fbdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WallDestroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
