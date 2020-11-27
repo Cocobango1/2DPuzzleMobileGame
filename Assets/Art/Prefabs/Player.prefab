@@ -80,7 +80,7 @@ SpriteRenderer:
   m_Size: {x: 4.5, y: 4.5002365}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1354810841281714554
@@ -182,7 +182,7 @@ SpriteRenderer:
   m_Size: {x: 4.5, y: 4.5002365}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &3223163550233918044
@@ -283,7 +283,7 @@ SpriteRenderer:
   m_Size: {x: 4.5, y: 4.5002365}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2915931754085170027
@@ -553,13 +553,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 2698762985386025539, guid: ca150fb30ab588943abffd1cc96e060a,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67f65fd9db8ca2c43b92e470abe20a67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.5, y: 4.5002365}
+  m_Size: {x: 23.56, y: 22.651192}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -664,7 +663,7 @@ SpriteRenderer:
   m_Size: {x: 4.5, y: 4.5002365}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &3888800516768958298
@@ -766,7 +765,7 @@ SpriteRenderer:
   m_Size: {x: 4.5, y: 4.5002365}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &7883670708649649210
@@ -868,7 +867,7 @@ SpriteRenderer:
   m_Size: {x: 4.5, y: 4.5002365}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &6934022881452503528
