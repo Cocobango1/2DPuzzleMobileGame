@@ -979,9 +979,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d64f6c77e2de3c48a77bb89862637a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GM: {fileID: 0}
   scene_name: 
   num: 0
+  GM: {fileID: 0}
 --- !u!4 &399800697
 Transform:
   m_ObjectHideFlags: 0
