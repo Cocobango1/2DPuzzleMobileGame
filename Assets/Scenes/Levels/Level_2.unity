@@ -519,6 +519,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 5.0734057
       objectReference: {fileID: 0}
+    - target: {fileID: 907108137612826499, guid: b0195a587bd50954e85c575725efa620,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.65
+      objectReference: {fileID: 0}
     - target: {fileID: 1234282662217804836, guid: b0195a587bd50954e85c575725efa620,
         type: 3}
       propertyPath: m_IsActive
@@ -981,7 +986,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene_name: 
   num: 0
-  GM: {fileID: 0}
 --- !u!4 &399800697
 Transform:
   m_ObjectHideFlags: 0
