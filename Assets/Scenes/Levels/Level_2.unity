@@ -522,7 +522,7 @@ PrefabInstance:
     - target: {fileID: 1234282662217804836, guid: b0195a587bd50954e85c575725efa620,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1282537588064162597, guid: b0195a587bd50954e85c575725efa620,
         type: 3}
@@ -627,7 +627,7 @@ PrefabInstance:
     - target: {fileID: 3961760047987894249, guid: b0195a587bd50954e85c575725efa620,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5059885670382696141, guid: b0195a587bd50954e85c575725efa620,
         type: 3}
@@ -979,9 +979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d64f6c77e2de3c48a77bb89862637a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: 
-  num: 0
-  GM: {fileID: 0}
 --- !u!4 &399800697
 Transform:
   m_ObjectHideFlags: 0
