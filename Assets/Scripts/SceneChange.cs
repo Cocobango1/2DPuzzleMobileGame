@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class SceneChange : MonoBehaviour
 {
-<<<<<<< HEAD
-    public LevelManager GM;
     public string scene_name;
     public int num;
 
@@ -20,12 +18,8 @@ public class SceneChange : MonoBehaviour
         }
     }
 
-    public void btn_scene_change(string scene_name)
-
-=======
     // Start is called before the first frame update
     public void btn_scene_change(string scene_name)
->>>>>>> parent of 326840c... nothing
     {
         SceneManager.LoadScene(scene_name);
     }
