@@ -4,10 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Events;
+
+[System.Serializable]
+public class DashEvent : UnityEvent<Vector2Int> { }
+
+[System.Serializable]
+public class HitEvent : UnityEvent<Vector2Int> { }
+
 public class Move : MonoBehaviour
 {
-    
-
+    [SerializeField]private DashEvent DashEvent;
+    [SerializeField]private HitEvent HitEvent;
     public UnityEvent moveEvent;
 
     public Vector2Int targetPosition;
@@ -18,20 +25,12 @@ public class Move : MonoBehaviour
     private bool playerBlocked = false;
     Vector3 move;
     public Animator animator;
-    public Animator animatorFX;
-    public Animator animatorHit;
-    Vector3 characterScale;
     
-
-    //public static int scoreValue = 23;
-
-
     private void Awake()
     {
         GetPositions();
         transform.position = (Vector2)targetPosition;
     }
-
 
     private void Update()
     {
@@ -100,8 +99,6 @@ public class Move : MonoBehaviour
         else
             {
             animator.SetBool("isIdle", true);
-            animatorFX.SetBool("isIdle", true);
-            animatorHit.SetBool("isIdle", true);
         }
     }
 
@@ -118,7 +115,7 @@ public class Move : MonoBehaviour
         if (!playerBlocked)
         {
             animator.SetTrigger("isWalking");
-            animatorFX.SetTrigger("isWalking");
+            DashEvent?.Invoke(direction);
         }
         moveCounter--;
         CheckIfGameOver();
@@ -137,10 +134,8 @@ public class Move : MonoBehaviour
 
         if (playerBlocked)
         {
-
             animator.SetTrigger("isPushing");
-            animatorHit.SetTrigger("isPushing");
-           
+            HitEvent?.Invoke(direction);
         }
     }
 }

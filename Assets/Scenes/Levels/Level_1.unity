@@ -3580,11 +3580,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5837927556607298029, guid: 52550db8310d12b47b00196d64987807,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52550db8310d12b47b00196d64987807, type: 3}
 --- !u!4 &978108235 stripped
@@ -5858,6 +5853,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1787094925}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1789603627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2915931754085170027, guid: b0195a587bd50954e85c575725efa620,
+    type: 3}
+  m_PrefabInstance: {fileID: 2915931755080671714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1789603628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789603627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f81e774c57bf6845900374cf9fc1516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles: {fileID: 3665219171801618533, guid: 2e1df6c34a18299419e5c8165f05eaf8,
+    type: 3}
 --- !u!1 &1808614670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6745,9 +6760,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3183164395002823200, guid: b0195a587bd50954e85c575725efa620,
         type: 3}
+      propertyPath: DashEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183164395002823200, guid: b0195a587bd50954e85c575725efa620,
+        type: 3}
       propertyPath: moveEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1340848370335665237}
+    - target: {fileID: 3183164395002823200, guid: b0195a587bd50954e85c575725efa620,
+        type: 3}
+      propertyPath: DashEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183164395002823200, guid: b0195a587bd50954e85c575725efa620,
+        type: 3}
+      propertyPath: DashEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183164395002823200, guid: b0195a587bd50954e85c575725efa620,
+        type: 3}
+      propertyPath: DashEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1789603628}
+    - target: {fileID: 3183164395002823200, guid: b0195a587bd50954e85c575725efa620,
+        type: 3}
+      propertyPath: DashEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183164395002823200, guid: b0195a587bd50954e85c575725efa620,
+        type: 3}
+      propertyPath: DashEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0195a587bd50954e85c575725efa620, type: 3}
 --- !u!1 &5878248129417325349
