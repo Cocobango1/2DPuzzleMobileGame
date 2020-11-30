@@ -608,7 +608,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Collab: 0
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -622,10 +622,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 688fec94-c535-4ac9-80cc-36b28b83adca
+  cloudProjectId: 2d2b5129-86a0-4f27-b2b2-548d30355cc6
   framebufferDepthMemorylessMode: 0
   projectName: FrankenGame
-  organizationId: yvearnaskye
+  organizationId: hawaiiannoises
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
